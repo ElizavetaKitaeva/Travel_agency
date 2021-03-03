@@ -1,0 +1,967 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #34A0DC;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+*,
+* :before,
+* :after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/*container*/
+.container {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+/*intro*/
+.intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/header-image.jpg') center no-repeat;
+    background-size: cover;
+}
+.intro-title {
+    font-family: Cormorant Infant, serif;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFFFFF;
+    margin-left: 54%;
+    margin-top: 14%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/*header*/
+header {
+    position: fixed;
+    z-index: 1000;
+}
+.header {
+    margin-top: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    cursor: pointer;
+}
+
+.image-logo {
+    width: 35px;
+    height: 25px;
+}
+
+.personal-link {
+    margin: 0 35px;
+}
+.user {
+    width: 25px;
+    height: 25px;
+}
+.shopping {
+    width: 25px;
+    height: 25px;
+}
+
+.title-block {
+    font-size: 25px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/*menu-list*/
+.menu-list {
+    font-weight: 400;
+    line-height: 21px;
+    margin-left: 100px;
+}
+
+.menu-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 35px;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-link:hover:after {
+    display: block;
+}
+
+/*cards*/
+.cards {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 67px;
+}
+
+.card-item {
+    width: 175px;
+    text-align: center;
+    margin-right: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-image {
+    margin-bottom: 30px;
+    width: 50px;
+}
+
+.card-title {
+    font-weight: 300;
+    line-height: 21px;
+}
+/*country*/
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 130px 130px 130px;
+    grid-gap: 35px;
+}
+.grid-text {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.grid-text:hover {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition: 0.3s;
+}
+.text-italia {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    margin-left: -10px;
+    margin-top: 130px;
+}
+.text-chehia {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.text-horvatia {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-left: 10px;
+} 
+.text-francia {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    margin-left: -30px;
+    margin-top: 130px;
+}
+.text-OAE {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.text-chernogoria {
+    font-size: 22px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+.text-egipet {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+.text-anglia {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    margin-left: -15px;
+    margin-top: 130px;
+}
+.text-finliandia {
+    font-size: 22px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+.text-indonesia {
+    font-size: 22px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+.text-australia {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.text-grecia {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+.text-brasilia {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    margin-left: -40px;
+    margin-top: 125px;
+}
+.text-maldivi {
+    font-size: 22px;
+    margin-top: 60px;
+    margin-left: 18px;
+}
+.text-istail {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-left: 18px;
+}
+.grid-container div:nth-child(1) {
+    grid-row: 1 / 3;
+}
+.grid-container div:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.grid-container div:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+.grid-container div:nth-child(8) {
+    grid-column: 4;
+    grid-row: 2 / 4;
+}
+.grid-container div:nth-child(7) {
+    grid-column: 6 / 8;
+    grid-row: 1;
+}
+.grid-container div:nth-child(11) {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.grid-container div:nth-child(11) {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.grid-container div:nth-child(13) {
+    grid-column: 7;
+    grid-row: 2/4;
+}
+.grid-element {
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ;
+    position: relative;
+}
+.grid-element:hover {
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.grid-element--chehia {
+    width: 210px;
+    height: 150px;
+}
+.grid-element--horvatia {
+    width: 210px;
+    height: 190px;
+}
+.grid-element--francia {
+    width: 100%;
+    height: 350px;
+}
+.grid-element--OAE {
+    width: 100%;
+    height: 150px;
+}
+.grid-element--chernogoria {
+    width: 100%;
+    height: 150px;
+}
+.grid-element--egipet {
+    width: 100%;
+    height: 180px;
+}
+.grid-element--anglia {
+    width: 100%;
+    height: 350px;
+}
+.grid-element--finliandia {
+    width: 210px;
+    height: 150px;
+}
+.grid-element--indonesia {
+    width: 180px;
+    height: 150px;
+}
+.grid-element--maldivi {
+    width: 210px;
+    height: 150px;
+}
+.grid-element--OAE{
+    width: 210px;
+    height: 150px;
+}
+.grid-element--australia {
+    width: 100%;
+    height: 180px;
+}
+.grid-element--grecia {
+    width: 260px;
+    height: 150px;
+}
+.grid-element--brasilia {
+    width: 100%;
+    height: 350px;
+}
+
+/*question*/
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: #34A0DC;
+    height: 140px;
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+.button-question {
+    width: 263px;
+    height: 72px;
+    background: #FFFFFF;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 200px;
+    margin-right: 197px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 21px;
+    color: #3599CF;
+    border: 0;
+}
+button, button:visited, button:focus, button:active, button:hover{
+    outline:0 none !important;
+}
+.title-question {
+    color: #fff;
+    margin-left: 197px;
+}
+.title-question-text {
+    font-weight: 500;    
+    margin-top: 25px;
+}
+.text-question {
+    color: #fff;
+    font-weight: 300;
+    line-height: 21px;
+}
+/*reviews*/
+.title-reviews {
+    margin-top: 240px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.cards-reviews {
+    margin-top: 50px;
+    column-count: 2;
+}
+.card-rev {
+    width: 642px;
+    height: 170px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.user-card {
+    margin-left: 18px;
+}
+.title-text {
+    font-weight: 500;
+    line-height: 21px;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+.text-card {
+    margin-left: 19px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-right: 55px;
+    margin-top: 10px;
+}
+.card-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #3599CF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 140px;
+    height: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 21px;
+    color: #3599CF;
+    cursor: pointer;
+}
+.button-rev {
+    margin-top: 50px;
+    display: flex;	
+    justify-content: center;
+}
+/*block-qestion*/
+.block-question {
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 1180px;
+    height: 510px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 37px;
+}
+.inputQuestion {
+    width: 1057px;
+    height: 267px;
+    background: #FFFFFF;
+    border: 1px solid #3599CF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 21px;
+    color: #3599CF;
+    margin-left: 60px;
+    padding: 10px 10px;
+    outline: none;
+    resize: none; 
+}
+.radio-button {
+    display: flex;
+    align-items: center;
+    margin-left: 68px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 21px;
+    color: #3599CF;
+    margin-top: 20px;
+    color: #3599CF;
+}
+.radio {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 11px;
+}
+b {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #3599CF;
+}
+.publicion {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #3599CF;
+    line-height: 21px;
+    font-weight: 300;
+}
+.button-question-rev {
+    background: #FFFFFF;
+    border: 1px solid #3599CF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 142px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 21px;
+    color: #3599CF;
+    cursor: pointer;
+    margin-left: 68px;
+    margin-right: 11px;
+}
+::-webkit-input-placeholder{
+    text-align:center;
+}
+
+/*footer*/
+.footer {
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    overflow: hidden;
+}
+.footer-inner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+.footer-social {
+    position: absolute;
+    margin-top: 163px;
+}
+.footer-logo {
+    color: #fff;
+
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    cursor: pointer;
+}
+.image-number {
+    margin-right: 5px;
+}
+.number {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 1066px;
+}
+.menu {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    margin-left: 880px;
+}
+
+.social {
+    display: flex;
+    position: absolute;
+    width: 30px;
+}
+
+.social-link {
+    margin-right: 25px;
+}
+
+.footer-image {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-size: cover;
+}
+
+/*country html*/
+header {
+    position: fixed;
+    z-index: 1000;
+}
+.header2 {
+    margin-top: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #3599CF;
+    display: inline-block;
+}
+
+/*menu-list*/
+.menu-list2 {
+    font-weight: 400;
+    line-height: 21px;
+    margin-left: 100px;
+}
+
+.menu-link2 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 35px;
+    color: #3599CF;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-link2:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    display: none;
+    background-color: #3599CF;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.header-logo2 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    cursor: pointer;
+    color: #3599CF;
+    text-decoration: none;
+}
+.menu-link2:hover:after {
+    display: block;
+}
+.user2 {
+    width: 25px;
+    height: 25px;
+}
+.world {
+    position: relative;
+    margin-top: 107px;
+}
+.world-card {
+    margin-left: 58px;
+}
+
+.place-finliandia {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -50%; left: 10%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-finliandia:hover {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -50%; left: 10%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-anglia {
+    width:20;
+    margin: auto;
+    position: absolute;
+    top: -35%; left: -5%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-anglia:hover {
+    width:20;
+    margin: auto;
+    position: absolute;
+    top: -35%; left: -5%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-france {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -30%; left: -1%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-france:hover {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -30%; left: -1%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-chehia {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: -30%; left: 6%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-chehia:hover {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: -30%; left: 6%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-italia {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: -23%; left: 2%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-italia:hover {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: -23%; left: 2%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-chernogoria {
+    width: 15px;
+    margin: auto;
+    position: absolute;
+    top: -23%; left: 6%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-chernogoria:hover {
+    width: 15px;
+    margin: auto;
+    position: absolute;
+    top: -23%; left: 6%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-grecia {
+    width: 12px;
+    margin: auto;
+    position: absolute;
+    top: -17%; left: 7%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-grecia:hover {
+    width: 12px;
+    margin: auto;
+    position: absolute;
+    top: -17%; left: 7%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-israil {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: -12%; left: 14%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-israil:hover {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: -12%; left: 14%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-egipet {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -8%; left: 9%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-egipet:hover {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -8%; left: 9%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-oae {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -1%; left: 22%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-oae:hover {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: -1%; left: 22%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-maldives {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: 14%; left: 31%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-maldives:hover {
+    width: 17px;
+    margin: auto;
+    position: absolute;
+    top: 14%; left: 31%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-indonesia {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: 22%; left: 46%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-indonesia:hover {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: 22%; left: 46%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-brasilia {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: 28%; left: -28%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-brasilia:hover {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: 28%; left: -28%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.place-australia {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 68%; bottom: 0; right: 0;
+    transition: 0.5s ;
+}
+.place-australia:hover {
+    width: 20px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 68%; bottom: 0; right: 0;
+    transform: scale(1.2);
+}
+
+.card-tour {
+    margin-top: 250px;
+}
+.title-block-card {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.card-brasil {
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid #34A0DD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 1313px;
+    height: 355px;
+}
+.image-tour {
+    width: 551px;
+    height: 353px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 17px;
+}
+.city-card{
+    margin-top: 19px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.text-tour {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+}
+.rating {
+    margin-left: 10px;
+}
+.button-card {
+    margin-left: 420px; 
+    width: 282.81px;
+    height: 38.4px;
+    background: #34A0DC;
+    border: 1px solid #34A0DC;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
